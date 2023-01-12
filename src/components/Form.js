@@ -6,9 +6,24 @@ import Step4 from "./steps/Step4";
 import Step5 from "./steps/Step5";
 
 function Form(props) {
+
+    function renderStep(step) {
+        switch(step) {
+            case 1: 
+                return <Step1/>;
+            case 2:
+                return <Step2/>
+            case 3:
+                return <Step3/>
+            case 4:
+                return <Step4/>
+            case 5:
+                return <Step5/>
+        }
+    }
     return (
         <main>
-            <Step1/>
+            {renderStep(props.step)}
             <section className="form-navigation-buttons">Go Back Next Step</section>
       </main>
   
