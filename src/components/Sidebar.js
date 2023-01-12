@@ -28,7 +28,7 @@ function Sidebar(props) {
         </div>
   
         <div className="step-section">
-          <span className={`step-circle${props.step === 4 ? ' active' : ''}`}>4</span>
+          <span className={`step-circle${props.step >= 4 ? ' active' : ''}`}>4</span>
           <div className="step-text-wrapper">
             <span className="step-text">Step 4</span>
             <span className="step-title">Summary</span>

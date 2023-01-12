@@ -130,20 +130,26 @@ h1 {
   width: 100vw;
   bottom: 0;
   background-color: white;
-  padding: 1.5rem 0.75rem;
+  padding: 1rem 0.75rem;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
 
 .next-button {
-
+  color: white;
+  background-color: var(--marine-blue);
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 5px;
 }
 
 .back-button {
-
+  color: var(--cool-gray);
+  background-color: transparent;
+  border: none;
 }
 
-.confirm-button {
-  
+.confirm {
+  background-color: var(--purplish-blue);
 }

@@ -12,10 +12,11 @@ function App() {
     <main>
       <Sidebar step={currentStep} />
       <Form step={currentStep} />
+      { currentStep < 5 &&
       <Navigation step={currentStep}
           handleNextStep={() => {setCurrentStep(prev => prev + 1)}} 
           handlePrevStep={() => {setCurrentStep(prev => prev - 1)}} />
-
+      }
       {/* <div className="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
