@@ -6,10 +6,13 @@ import Sidebar from './components/Sidebar';
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
 
+  
   return (
     <div className="App">
       <Sidebar step={currentStep} />
-      <Form step={currentStep} />
+      <Form step={currentStep} 
+        handleNextStep={() => {setCurrentStep(prev => prev + 1)}} 
+        handlePrevStep={() => {setCurrentStep(prev => prev - 1)}} />
 
       <div className="attribution">
         Challenge by

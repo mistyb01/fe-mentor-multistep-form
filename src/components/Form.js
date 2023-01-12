@@ -21,10 +21,16 @@ function Form(props) {
                 return <Step5/>
         }
     }
+
     return (
         <main>
             {renderStep(props.step)}
-            <section className="form-navigation-buttons">Go Back Next Step</section>
+
+            <section className="form-navigation-buttons">
+                {props.step > 1 && <button onClick={props.handlePrevStep} className="back-button">Go Back</button>}
+                {props.step < 4 && <button onClick={props.handleNextStep} className="next-button">Next Step</button>}
+                {props.step === 4 && <button onClick={props.handleNextStep} className="next-button">Confirm</button>}
+            </section>
       </main>
   
     )
