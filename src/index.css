@@ -4,6 +4,44 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* primary */
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+  /* neutral */
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: URL('../assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: URL('../assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: URL('../assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Ubuntu';
+}
+
+h1 {
+  font-weight: 700;
+}
+
 #sidebar {
   display: flex;
   flex-direction: row;
@@ -21,15 +59,15 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 3px solid hsl(228, 100%, 84%);
+  border: 3px solid var(--light-blue);
   color: white;
   height: 2.5rem;
   width: 2.5rem;
 }
 
 .step-circle.active {
-  color: hsl(213, 96%, 18%);
-  background-color: hsl(228, 100%, 84%);
+  color: var(--marine-blue);
+  background-color: var(--light-blue);
 }
 
 .step-text-wrapper {
