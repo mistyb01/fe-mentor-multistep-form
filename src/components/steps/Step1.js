@@ -2,7 +2,7 @@ import React from "react";
 
 function Step1() {
     return (
-        <section className="form-step-1">
+        <section className="form-container">
             <h1>Personal info</h1>
             <p>Please provide your name, email address, and phone number.</p>
             <form className="user-info-form">
