@@ -3,7 +3,8 @@ import React from "react";
 function Step4() {
     return (
         <section className="form-container">
-          Finishing up Double-check everything looks OK before confirming.
+          <h1>Finishing up</h1> 
+          <p>Double-check everything looks OK before confirming.</p>
         </section>
     )
 }

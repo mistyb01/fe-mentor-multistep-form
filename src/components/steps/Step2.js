@@ -8,26 +8,26 @@ function Step2() {
         <section className="form-container">
             <h1>Select your plan</h1>
             <p>You have the option of monthly or yearly billing.</p>
-            <section className="billing-options-container">
-                <div className="billing-option">
+            <section className="options-container">
+                <div className="option left">
                     <ArcadeIcon/>
-                    <div className="billing-option-text">
+                    <div className="option-text">
                         <strong>Arcade</strong>
                         <p>$9/mo</p>
                     </div>
                 </div>
 
-                <div className="billing-option">
+                <div className="option left">
                     <AdvancedIcon/>
-                    <div className="billing-option-text">
+                    <div className="option-text">
                         <strong>Advanced</strong>
                         <p>$9/mo</p>
                     </div>
                 </div>
 
-                <div className="billing-option">
+                <div className="option left">
                     <ProIcon/>
-                    <div className="billing-option-text">
+                    <div className="option-text">
                         <strong>Pro</strong>
                         <p>$9/mo</p>
                     </div>
