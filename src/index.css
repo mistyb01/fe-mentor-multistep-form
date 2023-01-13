@@ -36,7 +36,7 @@
 
 body {
   font-family: 'Ubuntu';
-  background-color: var(--light-gray);
+  background-color: var(--magnolia);
 }
 
 h1 {
@@ -100,8 +100,13 @@ h1 {
 
 .form-container p {
   color: var(--cool-gray);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.5;
+}
+
+.form-container .cost {
+  color: var(--purplish-blue);
+  font-weight: bold;
 }
 
 .user-info-form {
@@ -184,8 +189,7 @@ h1 {
   row-gap: 0.25rem;
 }
 
-.option strong {
-  font-size: 0.8rem;
+strong {
   color: var(--marine-blue);
 }
 
@@ -193,11 +197,31 @@ h1 {
   font-size: 0.6rem;
 }
 
-.option .cost {
-  color: var(--purplish-blue);
-}
-
 .checkbox-and-text {
   display: flex;
   column-gap: 1rem;
+}
+
+.results-table {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  background-color: var(--alabaster);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.results-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results-row.last {
+  padding: 0rem 1rem;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid var(--light-gray);
 }
