@@ -89,6 +89,7 @@ h1 {
   right:0;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 1px 1px 30px rgba(150, 153, 171, 0.455);
 }
 
 .form-container {
@@ -96,6 +97,12 @@ h1 {
   flex-direction: column;
   row-gap: 0.9rem;
   text-align: left;
+}
+
+.form-container.thank-you {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .form-container p {
@@ -112,7 +119,7 @@ h1 {
 .user-info-form {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
+  row-gap: 1rem;
 }
 
 .user-info-form span {
@@ -122,15 +129,16 @@ h1 {
 }
 
 .user-info-form label {
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 0.7rem;
   color: var(--marine-blue);
 }
 
 .user-info-form input[type=text] {
-  font-size: 1rem;
-  font-weight:500;
+  font-size: 0.8rem;
+  font-weight: bold;
   padding: 0.5rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
 }
 
 .form-navigation-buttons {
@@ -195,6 +203,12 @@ strong {
 
 .option p {
   font-size: 0.6rem;
+}
+
+input[type=checkbox] {
+  border-style: 1px solid var(--light-gray);
+  border-radius: 2px;
+  width: 1.25rem;
 }
 
 .checkbox-and-text {
